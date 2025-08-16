@@ -1,0 +1,115 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "language": "Odia-Odisha",
+    "website": "www.myweb.com",
+    "types": [
+        "Type 1",
+        "Type 2"
+    ],
+    "address": "1234, Odisha",
+    "phone_number": "1234567890",
+    "name": "AaHouse",
+    "accuracy": 50,
+    "location": {
+        "lat": -35.256486228,
+        "lng": 65.585364446
+    }
+}
+HTTP/1.1 200 OK
+Date: Fri, 15 Aug 2025 05:48:40 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "e96602674e3a0f53a7f0d58cb5006095",
+    "scope": "APP",
+    "reference": "e1ac238ada96b4d51b23e798cb69f88fe1ac238ada96b4d51b23e798cb69f88f",
+    "id": "e1ac238ada96b4d51b23e798cb69f88f"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=e96602674e3a0f53a7f0d58cb5006095
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=e96602674e3a0f53a7f0d58cb5006095
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 15 Aug 2025 05:48:42 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 229
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-35.256486228",
+        "longitude": "65.585364446"
+    },
+    "accuracy": "50",
+    "name": "AaHouse",
+    "phone_number": "1234567890",
+    "address": "1234, Odisha",
+    "types": "Type 1,Type 2",
+    "website": "www.myweb.com",
+    "language": "Odia-Odisha"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "e96602674e3a0f53a7f0d58cb5006095"
+}
+HTTP/1.1 200 OK
+Date: Fri, 15 Aug 2025 05:48:44 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
